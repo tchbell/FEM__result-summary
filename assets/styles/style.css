@@ -1,0 +1,129 @@
+.container {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+.row {
+  box-shadow: 15px 15px 15px 5px hsla(221, 100%, 96%, 0.8);
+  border-radius: 25px;
+}
+.results {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Hanken Grotesk;
+  font-size: 18px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  color: lightgray;
+  padding: 2rem 3rem;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 991px) {
+  .results {
+    border-radius: 25px;
+    margin-bottom: 0;
+  }
+}
+@font-face {
+  font-family: 'Hanken Grotesk';
+  src: url('../fonts/HankenGrotesk-VariableFont_wght.ttf') format('truetype');
+}
+
+.results-graphic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: linear-gradient(hsla(224, 30%, 27%, 0.6), transparent);
+  padding: 1.5rem 3rem;
+  color: lightgray;
+  margin: 16px 0;
+}
+.results-title {
+  font-weight: 700;
+}
+.results-graphic__main {
+  font-size: 54px;
+  font-weight: bold;
+  color: white;
+}
+.results-status {
+  font-size: 24px;
+  color: white;
+}
+.results-copy {
+  text-align: center;
+  color: lightgray;
+}
+
+.summary {
+  font-family: Hanken Grotesk;
+  font-size: 18px;
+  padding: 0 16px;
+  padding: 2rem;
+}
+.summary-title {
+  color: hsl(224, 30%, 27%);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.summary-section {
+  padding: 1rem;
+  border-radius: 15px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.summary-section__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.summary-section__title img {
+  margin-right: 16px;
+}
+.summary-section.reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+.summary-section.memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+.summary-section.verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(66, 100%, 37%);
+}
+.summary-section.visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+button {
+  width: 100%;
+  border-radius: 25px;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  padding: 16px 0;
+  font-family: Hanken Grotesk;
+  font-weight: 700;
+  border: none;
+}
+
+button:hover {
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+  margin-top: 2rem;
+}
